@@ -32,10 +32,10 @@
             Add your email below to stay up-to-date with announcements and our launch deals.</p>
         </div>
         <div class="content-form">
-          <form action="post">
-            <input type="email" value="" placeholder="Email Address">
-            <img class="arrow" src="./images/icon-error.svg" alt="error">
-            <button class="btn">
+          <form class="form" name="email-form" method="post" onsubmit="return validateForm()">
+            <input id="email" name="email" value="" placeholder="Email Address">
+            <img class="error-icon" src="./images/icon-error.svg" alt="error">
+            <button class="btn" type="submit">
               <img src="./images/icon-arrow.svg" alt="arrow">
             </button>
           </form>
@@ -55,5 +55,6 @@
       Coded by <a href="#">@nimscodes</a>.
     </p>
   </footer> -->
+  <script src="./scripts/script.js"></script>
 </body>
 </html>
