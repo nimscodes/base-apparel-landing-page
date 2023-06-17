@@ -21,41 +21,58 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
 }
 
 body, html{
-    height: 100%;
+    width: 100%;
     font-family: var(--josefin-sans);
+    overflow: hidden;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container{
+    max-width: 1440px;
+    width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.app{
+    display: flex;
+    flex-direction: column;
     background: var(--grad-1), var(--grad-2);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
     background-position: top;
-
-}
-
-.app{
-    display: flex;
-    flex-direction: column;
 }
 
 .logo{
-   padding: 28px 36px 36px 36px;
+   padding: 5% 10% 8% 10%;
 }
 
 .logo img{
     width: 120px;
+    height: auto;
     object-fit: contain;
 }
 
 .hero{
+    display: block;
     width: 100%;
     margin-bottom: 24px;
 }   
+
+.hero-desktop{
+    display: none;
+}
 
 
 .hero img{
@@ -64,7 +81,8 @@ body, html{
 }
 
 .content{
-    padding: 36px;
+    padding: 10%;
+    margin-bottom: 8%
 }
 
 .content-info h1{
@@ -161,6 +179,60 @@ body, html{
     font-size: 15px;
 }
 
+
+/* Desktop View */
+
+@media screen and (min-width: 768px){
+    body,html{
+        height: 100%;
+    }
+
+    .app{
+        width: 60%;
+        height: 100%;
+        background: url('../images/bg-pattern-desktop.svg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        padding: 2% 10% 10% 10%;
+        
+    }
+
+    .logo{
+        margin-bottom: 32px;
+    }
+
+    .logo img{
+        width: 150px;
+    }
+
+    .hero-desktop{
+        width: 40%;
+        display: block;
+        height: 100%;
+    }
+
+    .hero-desktop img{
+        height: 100%;
+        width: auto;
+        object-fit: contain;
+    }
+
+    .hero{
+        display: none;
+    }
+
+    .content-info h1{
+        font-size: 64px;
+        text-align: left;
+    }
+
+    .content-info p{
+        text-align: left;
+        line-height: 32px;
+    }
+}
 
 
 
