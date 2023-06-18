@@ -8,13 +8,6 @@
   <link rel="stylesheet" href="styles/style.css">
   
   <title>Frontend Mentor | Base Apparel coming soon page</title>
-
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <div class="container">
@@ -32,8 +25,8 @@
             Add your email below to stay up-to-date with announcements and our launch deals.</p>
         </div>
         <div class="content-form">
-          <form class="form" name="email-form" method="post" onsubmit="return validateForm()">
-            <input id="email" name="email" value="" placeholder="Email Address">
+          <form class="form" id="email-form" method="post" onsubmit="return validateForm()">
+            <input id="email" type="text" placeholder="Email Address">
             <img class="error-icon" src="./images/icon-error.svg" alt="error">
             <button class="btn" type="submit">
               <img src="./images/icon-arrow.svg" alt="arrow">
@@ -49,12 +42,12 @@
     
   </div>
   
-  <!-- <footer>
+  <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">@nimscodes</a>.
+      Coded by <a href="https://github.com/nimscodes">@nimscodes</a>.
     </p>
-  </footer> -->
+  </footer>
   <script src="./scripts/script.js"></script>
 </body>
 </html>
