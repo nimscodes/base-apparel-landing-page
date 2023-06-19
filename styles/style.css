@@ -124,6 +124,7 @@ body, html{
     border-radius: 48px;
     gap: 10px;
     align-items: center;
+    
 }
 
 .content-form input{
@@ -159,7 +160,7 @@ body, html{
     outline: none;
     border-radius: 48px;
     cursor: pointer;
-
+    z-index: 5;
 }
 
 .btn:hover{
